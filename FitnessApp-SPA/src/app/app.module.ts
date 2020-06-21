@@ -7,6 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './Home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BmiComponent } from './bmi/bmi.component';
+import { BfComponent } from './bf/bf.component';
+import { BmrComponent } from './bmr/bmr.component';
 
 
 
@@ -14,13 +17,16 @@ import { HttpClientModule } from '@angular/common/http';
    declarations: [
       AppComponent,
       NavComponent,
-      HomeComponent
+      HomeComponent,
+      BmiComponent,
+      BfComponent,
+      BmrComponent
    ],
    imports: [
       BrowserModule,
       AppRoutingModule,
       BrowserAnimationsModule,
-      HttpClientModule 
+      HttpClientModule
    ],
    providers: [],
    bootstrap: [
