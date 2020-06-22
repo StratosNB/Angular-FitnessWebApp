@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { BmiComponent } from './bmi/bmi.component';
 import { BfComponent } from './bf/bf.component';
 import { BmrComponent } from './bmr/bmr.component';
+import { RouterModule } from '@angular/router';
+import { appRoutes } from './routes';
 
 
 
@@ -26,7 +28,8 @@ import { BmrComponent } from './bmr/bmr.component';
       BrowserModule,
       AppRoutingModule,
       BrowserAnimationsModule,
-      HttpClientModule
+      HttpClientModule,
+      RouterModule.forRoot(appRoutes)
    ],
    providers: [],
    bootstrap: [

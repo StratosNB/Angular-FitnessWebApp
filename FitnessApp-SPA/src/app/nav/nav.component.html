@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Fitness App</a>
+  <a class="navbar-brand" [routerLink]="['/home']">Fitness App</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,13 +7,13 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Body Fat</a>
+        <a class="nav-link" [routerLink]="['/bf']">Body Fat</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Body Mass Index</a>
+        <a class="nav-link" [routerLink]="['/bmi']">Body Mass Index</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Basal Metabolic Rate</a>
+        <a class="nav-link" [routerLink]="['/bmr']">Basal Metabolic Rate</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
