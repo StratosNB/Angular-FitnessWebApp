@@ -4,3 +4,19 @@
 @import '../node_modules/font-awesome/css/font-awesome.min.css';
 @import '../node_modules/alertifyjs/build/css/alertify.min.css';
 @import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
+
+.bf-parent {
+    display: flex;
+    margin: 55px 55px 55px 55px;
+  }
+
+.bf-left-div {
+    float: left;
+    width: 400px;
+}
+
+.bf-right-div {
+    float: rigth;
+    width: 350px;
+    margin-left: 160px;
+}
