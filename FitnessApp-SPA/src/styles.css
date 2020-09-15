@@ -1,22 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
-@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-@import '../node_modules/bootswatch/dist/superhero/bootstrap.min.css';
-@import '../node_modules/font-awesome/css/font-awesome.min.css';
-@import '../node_modules/alertifyjs/build/css/alertify.min.css';
-@import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/bootswatch/dist/superhero/bootstrap.min.css";
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+@import "../node_modules/alertifyjs/build/css/alertify.min.css";
+@import "../node_modules/alertifyjs/build/css/themes/bootstrap.min.css";
 
 .bf-parent {
-    display: flex;
-    margin: 55px 55px 55px 55px;
-  }
+  display: flex;
+  margin: 100px 30px 70px 280px;
+}
 
 .bf-left-div {
-    float: left;
-    width: 400px;
+  float: left;
+  width: 400px;
 }
 
 .bf-right-div {
-    float: rigth;
-    width: 350px;
-    margin-left: 160px;
+  float: rigth;
+  width: 350px;
+  margin-left: 110px;
+}
+
+.bf-innerdiv {
+  margin: 20px;
 }
