@@ -6,34 +6,17 @@
           <tr>
             <td width="70">Gender</td>
             <td width="240">
-              <label for="csex1" class="cbcontainer"
-                ><input
-                  type="radio"
-                  name="csex"
-                  id="csex1"
-                  value="m"
-                  checked=""
-                /><span class="rbmark"></span>male</label
-              >
+              <label for="csex1" class="cbcontainer"><input type="radio" name="csex" id="csex1" value="m"
+                  checked="" /><span class="rbmark"></span>male</label>
               &nbsp;
-              <label for="csex2" class="cbcontainer"
-                ><input type="radio" name="csex" id="csex2" value="f" /><span
-                  class="rbmark"
-                ></span
-                >female</label
-              >
+              <label for="csex2" class="cbcontainer"><input type="radio" name="csex" id="csex2" value="f" /><span
+                  class="rbmark"></span>female</label>
             </td>
           </tr>
           <tr>
             <td width="70">Age</td>
             <td width="240">
-              <input
-                type="text"
-                name="cage"
-                value="25"
-                class="inlongest"
-                onkeyup="iptfieldCheck(this, 'r', 'pn');"
-              />
+              <input type="text" name="cage" value="25" class="inlongest" onkeyup="iptfieldCheck(this, 'r', 'pn');" />
             </td>
           </tr>
         </tbody>
@@ -43,74 +26,42 @@
           <tr>
             <td width="70">Weight</td>
             <td width="240">
-              <input
-                type="text"
-                name="cweightkgs"
-                value="80"
-                class="inlongest inuick"
-                onkeyup="iptfieldCheck(this, 'r', 'pn');"
-              /><span class="inuickspan">kg</span>
+              <input type="text" name="cweightkgs" value="80" class="inlongest inuick"
+                onkeyup="iptfieldCheck(this, 'r', 'pn');" /><span class="inuickspan">kg</span>
             </td>
           </tr>
           <tr>
             <td width="70">Height</td>
             <td width="240">
-              <input
-                type="text"
-                name="cheightmeter"
-                id="cheightmeter"
-                value="178"
-                class="inlongest inuick"
-                onkeyup="iptfieldCheck(this, 'r', 'pn');"
-              /><span class="inuickspan">cm</span>
+              <input type="text" name="cheightmeter" id="cheightmeter" value="178" class="inlongest inuick"
+                onkeyup="iptfieldCheck(this, 'r', 'pn');" /><span class="inuickspan">cm</span>
             </td>
           </tr>
           <tr>
             <td width="70">Neck</td>
             <td width="240">
-              <input
-                type="text"
-                name="cneckmeter"
-                id="cneckmeter"
-                value="42"
-                class="inlongest inuick"
-                onkeyup="iptfieldCheck(this, 'r', 'pn');"
-              /><span class="inuickspan">cm</span>
+              <input type="text" name="cneckmeter" id="cneckmeter" value="42" class="inlongest inuick"
+                onkeyup="iptfieldCheck(this, 'r', 'pn');" /><span class="inuickspan">cm</span>
             </td>
           </tr>
           <tr>
             <td width="70">Waist</td>
             <td width="240">
-              <input
-                type="text"
-                name="cwaistmeter"
-                id="cwaistmeter"
-                value="90"
-                class="inlongest inuick"
-                onkeyup="iptfieldCheck(this, 'r', 'pn');"
-              /><span class="inuickspan">cm</span>
+              <input type="text" name="cwaistmeter" id="cwaistmeter" value="90" class="inlongest inuick"
+                onkeyup="iptfieldCheck(this, 'r', 'pn');" /><span class="inuickspan">cm</span>
             </td>
           </tr>
           <tr>
             <td width="70">Hip</td>
             <td width="240">
-              <input
-                type="text"
-                name="chipmeter"
-                id="chipmeter"
-                value="96"
-                class="inlongest inuick"
-                onkeyup="iptfieldCheck(this, 'r', 'pn');"
-              /><span class="inuickspan">cm</span>
+              <input type="text" name="chipmeter" id="chipmeter" value="96" class="inlongest inuick"
+                onkeyup="iptfieldCheck(this, 'r', 'pn');" /><span class="inuickspan">cm</span>
             </td>
           </tr>
         </tbody>
       </table>
       <div class="form-group text-center">
-        <button
-          class="btn btn-success"
-          type="submit"
-        >
+        <button class="btn btn-success" type="submit" (click)="showBfResults()">
           Calculate
         </button>
         <button class="btn btn-default" type="button">
@@ -120,64 +71,61 @@
     </div>
   </div>
 
-  <div class="bf-innerdiv">
-    <h2>Result</h2>
-    <p class="verybigtext">
-      <font color="green"><b>Body Fat: 17.2%</b></font>
-    </p>
-    <table>
-      <tbody>
-        <tr>
-          <td>
-            <div>
-              17.2%<br /><img
-                src="//d26tpo4cm8sb6k.cloudfront.net/img/arrow-down.png"
-              />
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img
-              src="//d26tpo4cm8sb6k.cloudfront.net/img/body-fat-man.png"
-              width="320"
-            />
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <br />
-    <table class="cinfoT">
-      <tbody>
-        <tr>
-          <td>Body Fat (U.S. Navy Method)</td>
-          <td>17.2%</td>
-        </tr>
-        <tr>
-          <td>Body Fat Category</td>
-          <td>Fitness</td>
-        </tr>
-        <tr>
-          <td>Body Fat Mass</td>
-          <td>13.8 kgs</td>
-        </tr>
-        <tr>
-          <td>Lean Body Mass</td>
-          <td>66.2 kgs</td>
-        </tr>
-        <tr>
-          <td>Ideal Body Fat for Given Age<br />(Jackson &amp; Pollard)</td>
-          <td>10.5%</td>
-        </tr>
-        <tr>
-          <td>Body Fat to Lose to Reach Ideal</td>
-          <td>5.4 kgs</td>
-        </tr>
-        <tr>
-          <td>Body Fat (BMI method)</td>
-          <td>19.8%</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  <ng-container *ngIf="show">
+    <div class="bf-innerdiv">
+      <h2>Result</h2>
+      <p class="verybigtext">
+        <font color="green"><b>Body Fat: 17.2%</b></font>
+      </p>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                17.2%<br /><img src="//d26tpo4cm8sb6k.cloudfront.net/img/arrow-down.png" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="//d26tpo4cm8sb6k.cloudfront.net/img/body-fat-man.png" width="320" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <table class="cinfoT">
+        <tbody>
+          <tr>
+            <td>Body Fat (U.S. Navy Method)</td>
+            <td>17.2%</td>
+          </tr>
+          <tr>
+            <td>Body Fat Category</td>
+            <td>Fitness</td>
+          </tr>
+          <tr>
+            <td>Body Fat Mass</td>
+            <td>13.8 kgs</td>
+          </tr>
+          <tr>
+            <td>Lean Body Mass</td>
+            <td>66.2 kgs</td>
+          </tr>
+          <tr>
+            <td>Ideal Body Fat for Given Age<br />(Jackson &amp; Pollard)</td>
+            <td>10.5%</td>
+          </tr>
+          <tr>
+            <td>Body Fat to Lose to Reach Ideal</td>
+            <td>5.4 kgs</td>
+          </tr>
+          <tr>
+            <td>Body Fat (BMI method)</td>
+            <td>19.8%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </ng-container>
 </div>

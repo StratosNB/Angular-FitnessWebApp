@@ -24,3 +24,7 @@
 .bf-innerdiv {
   margin: 20px;
 }
+
+.div-hidden {
+  visibility: "hidden" 
+}

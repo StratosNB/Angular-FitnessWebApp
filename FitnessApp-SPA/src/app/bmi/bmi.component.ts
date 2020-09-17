@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BmiComponent implements OnInit {
 
+  public show:boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  showBmiResults(){
+    this.show = !this.show;
   }
 
 }

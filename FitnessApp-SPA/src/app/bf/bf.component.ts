@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BfComponent implements OnInit {
 
+  public show:boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  showBfResults(){
+    this.show = !this.show;
   }
 
 }

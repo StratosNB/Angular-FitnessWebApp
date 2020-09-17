@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BmrComponent implements OnInit {
 
+  public show:boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  showBmrResults(){
+    this.show = !this.show;
   }
 
 }
