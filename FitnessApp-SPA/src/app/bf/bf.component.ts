@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class BfComponent implements OnInit {
 
   public show:boolean = false;
-
+  
   constructor() { }
 
   ngOnInit() {
@@ -16,6 +16,9 @@ export class BfComponent implements OnInit {
 
   showBfResults(){
     this.show = !this.show;
+
+    
+
   }
 
 }

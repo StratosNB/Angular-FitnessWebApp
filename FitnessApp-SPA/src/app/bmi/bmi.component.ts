@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-bmi',
@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BmiComponent implements OnInit {
 
-  public show:boolean = false;
+  show:boolean = false;
+  @Input() HeightInput: number;
+  @Input() WeightInput: number;
+  @Input() bmiResult: number;
+  @Output() bmiResultCalculate = new EventEmitter<number>();
 
   constructor() { }
 
@@ -15,7 +19,15 @@ export class BmiComponent implements OnInit {
   }
 
   showBmiResults(){
+
+    this.bmiResult = this.WeightInput/ (this.HeightInput*this.HeightInput);
+
+    this.bmiResultCalculate.emit(this.bmiResult);
+
     this.show = !this.show;
+
+
+
   }
 
 }

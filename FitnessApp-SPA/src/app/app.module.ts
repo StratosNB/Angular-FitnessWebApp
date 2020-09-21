@@ -12,6 +12,8 @@ import { BfComponent } from './bf/bf.component';
 import { BmrComponent } from './bmr/bmr.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -29,7 +31,8 @@ import { appRoutes } from './routes';
       AppRoutingModule,
       BrowserAnimationsModule,
       HttpClientModule,
-      RouterModule.forRoot(appRoutes)
+      RouterModule.forRoot(appRoutes),
+      FormsModule
    ],
    providers: [],
    bootstrap: [
